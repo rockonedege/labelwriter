@@ -13,7 +13,7 @@
 import socket
 import sys
 import time
-from datetime import datetime, date, time
+from datetime import datetime
 
 import os
 from string import Template
@@ -211,7 +211,7 @@ def msgRunLabelTemplate(arg1, arg2):
 
 def main():
     print("running labelwriter module standalone")
-    mylabelwriter = Labelwriter('192.168.1.3', 9100)
+    mylabelwriter = Labelwriter('127.0.0.1', 9100)
     mylabelwriter.beep()
 
     kwarg_partial = {
